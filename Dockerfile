@@ -3,7 +3,7 @@ RUN sudo apt-get update
 # A browser for testing
 RUN sudo apt-get install -y firefox
 # A REST Client for express.js API testing
-RUN sudo apt install snapd snapd-xdg-open
+RUN sudo apt install -y snapd snapd-xdg-open
 RUN snap install postman
 # The powerful Visual Studio Code for someone that wants it
 RUN sudo apt install -y software-properties-common apt-transport-https wget
