@@ -4,6 +4,7 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y firefox
 # A REST Client for express.js API testing
 RUN sudo apt install -y snapd snapd-xdg-open
+RUN sudo systemctl start snapd
 RUN snap install postman
 # The powerful Visual Studio Code for someone that wants it
 RUN sudo apt install -y software-properties-common apt-transport-https wget
