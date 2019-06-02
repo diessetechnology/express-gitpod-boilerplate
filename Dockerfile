@@ -1,4 +1,5 @@
 FROM gitpod/workspace-full-vnc
+RUN sudo apt-get update
 # A browser for testing
 RUN sudo apt-get install firefox
 # A REST Client for express.js API testing
@@ -36,3 +37,4 @@ ENV DATABASE_URL="postgresql://gitpod@localhost"
 # tasks from a Dockerfile. This workaround checks, on each bashrc eval, if the
 # PostgreSQL server is running, and if not starts it.
 RUN printf "\n# Auto-start PostgreSQL server.\n[[ \$(pg_ctl status | grep PID) ]] || pg_start > /dev/null\n" >> ~/.bashrc
+RUN sudo apt-get clean && sudo rm -rf /var/cache/apt/* /var/lib/apt/lists/* /tmp/*
