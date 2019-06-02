@@ -1,7 +1,7 @@
-# express-sass-ejs-gitpod
+# express-gitpod-boilerplate
 A boilerplate for the awesome Gitpod cloud ide users:
 
-Based on the output of express-generator
+Based on the output of express-generator,with ejs and SASS support
 
 The Dockerfile contains:
 - A browser (Firefox)
