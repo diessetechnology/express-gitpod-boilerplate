@@ -1,0 +1,5 @@
+image:
+  file: Dockerfile
+  context: .
+tasks:
+- command: npm install && npm run start
