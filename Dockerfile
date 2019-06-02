@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full-vnc
 RUN sudo apt-get update
 # A browser for testing
-RUN sudo apt-get install firefox
+RUN sudo apt-get install -y firefox
 # A REST Client for express.js API testing
 RUN sudo apt install snapd snapd-xdg-open
 RUN snap install postman
@@ -11,10 +11,10 @@ RUN wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key
 RUN sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 RUN sudo apt update && sudo apt -y install code
 # A Database Client is always useful with Express.js
-RUN sudo apt-get install openjdk-8-jdk
+RUN sudo apt-get install -y openjdk-8-jdk
 RUN wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
 RUN echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
-RUN sudo apt update && sudo apt install dbeaver-ce
+RUN sudo apt update && sudo apt install -y dbeaver-ce
 # Code from gitpod/workspace-postgres Dockerfile
 # Install PostgreSQL
 RUN sudo apt-get update \
