@@ -5,7 +5,6 @@ Based on the output of express-generator,with ejs and SASS support
 
 The Dockerfile contains:
 - A browser (Firefox)
-- A PostgreSQL Server
 - A REST Client (Postman)
 - The powerful Visual Studio Code
 
