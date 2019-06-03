@@ -1,5 +1,5 @@
 # express-gitpod-boilerplate
-A boilerplate for the awesome Gitpod cloud ide users:
+A boilerplate for users of the awesome Gitpod cloud ide:
 
 Based on the output of express-generator,with ejs and SASS support
 
