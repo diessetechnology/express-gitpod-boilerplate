@@ -1,6 +1,6 @@
 # express-gitpod-boilerplate
 A boilerplate for users of the awesome Gitpod cloud ide:
-
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/diessetechnology/express-gitpod-boilerplate)
 Based on the output of express-generator,with ejs and SASS support
 
 The Dockerfile contains:
