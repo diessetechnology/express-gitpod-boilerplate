@@ -23,6 +23,10 @@ RUN sudo apt-get install -y openjdk-8-jdk
 RUN wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
 RUN echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
 RUN sudo apt update && sudo apt install -y dbeaver-ce
+RUN apt-get update && apt-get install -y \
+        postgresql \
+        postgresql-contrib \
+    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 USER gitpod
 ENV PATH="/usr/lib/postgresql/10/bin:$PATH"
 RUN mkdir -p ~/pg/data; mkdir -p ~/pg/scripts; mkdir -p ~/pg/logs; mkdir -p ~/pg/sockets; initdb -D pg/data/
